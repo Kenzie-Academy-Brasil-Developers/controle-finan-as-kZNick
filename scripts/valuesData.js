@@ -17,3 +17,6 @@ let insertedValues = [
     categoryID: 1,
   },
 ];
+
+
+const valores = []

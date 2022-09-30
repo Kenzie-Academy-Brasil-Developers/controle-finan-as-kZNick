@@ -1,0 +1,45 @@
+.finacerAll{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+
+
+}
+.finaces{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--color-grey-3);
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+.finacerAll .finaces{
+    animation: renderAnimation 2s ;
+}
+.finaces div{
+    display: flex;
+    gap: 30px;
+}
+.finaces-values{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.finaces-category{
+    border-radius: 4px;
+    background-color: var(--color-grey-4);
+    padding: 7px 14px;
+    font-size: 14px;
+}
+.finaces-button{
+    padding: 0px 10px;
+    border-radius: 4px;
+    border: 2px solid var(--color-grey-4);
+    background-color: transparent;
+    cursor: pointer;
+}
+.finaces-button:hover{
+    border: 2px solid var(--color-grey-2);
+}

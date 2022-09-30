@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Control Finance - Seu controle financeiro">
+    <link rel="stylesheet" href="styles/globalStyles.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/mainContent.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1 class="logo"><span class="color-main">Control</span> Finance</h1>
+            <button class="butao-header">Registrar novo valor</button>
+        </nav>
+    </header>
+    <main class="container" id="app">
+        <section class="main-header">
+            <h2>Resumo financeiro</h2>
+            <div class="button-flex">
+                <button class="fitre-button" id="fitreTodos">Todos</button>
+                <button class="fitre-button" id="fitreEntradas">Entradas</button>
+                <button class="fitre-button" id="fitreSaidas">Saídas</button>
+            </div>
+        </section>
+        <section class="main-header background-color-grey">
+            <h2>Soma dos valores</h2>
+            <h3 id="valortotal">R$ 0,00</h3>
+        </section>
+        <section class="main-information">
+
+            <button class="button-main">
+                <h2>Nenhum valor cadastrado</h2>
+                <p>Registrar novo valor</p>
+            </button>
+            <ul class="finacerAll">
+
+            </ul>
+        </section>
+        <section class="modal">
+            <div class="modal-main">
+                <div class="modal-heder"><h2>Registro de valor</h2> <button id="modalChose">x</button></div>
+                <p>Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+                <form>
+                    <label for="inputNuber">Valor</label>
+                    <label for="inputNuber" class="fixo-input">R$</label>
+                    <input type="number" class="input-nuber" id="inputNuber" placeholder="0.00" required="true">
+                    <div class="modal-baseboard">
+                        <div class="input-radio">
+                            <h3>Tipo de valor</h3>
+                            <ul>
+                                <li>
+                                    <input type="radio" hidden  id="ValorEntrada" name="valor" value="Entrada" required="true">
+                                    <label class="label-radio " id="labelEntrada" tabindex="0" for="ValorEntrada">Entrada</label>
+                                </li>
+                                <li>
+                                    <input type="radio" hidden id="valorSaida"  name="valor" value="Saída" required="true">
+                                    <label class="label-radio " id="labelSaida" tabindex="valorSaida" for="valorSaida">Saída</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-button">
+                            <button class="background-color-grey" id="modalCancelar">Cancelar</button>
+                            <button class="background-color-main" id="buttonFinal" type="submit">Inserir valor</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/valuesData.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/filter.js"></script>
+
+</body>
+</html>
