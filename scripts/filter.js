@@ -6,7 +6,7 @@ fitreTodos.addEventListener("click",()=>{
     fitreEntradas.classList.remove("fitre-button-on")
     fitreTodos.classList.add("fitre-button-on")
     rederizando(valores)
-    soma (novoSaidas)
+    soma (valores)
     if(valores.length <= 0){
         document.querySelector(".button-main").classList.remove("button-main-off")
      }
